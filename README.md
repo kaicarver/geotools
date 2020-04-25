@@ -8,6 +8,16 @@ To try it out, I am following this guide:
 
 http://docs.geotools.org/latest/userguide/tutorial/quickstart/maven.html
 
+In order for the example to run from my WSL terminal, after a successful build, I had to
+launch something called XLaunch from Xming, accepting all defaults.
+
+Then this works ok:
+
+```bash
+export DISPLAY=:0.0
+mvn exec:java -Dexec.mainClass=org.geotools.tutorial.quickstart.Quickstart
+```
+
 ## Note
 
 It's fun to use Java for a change.
